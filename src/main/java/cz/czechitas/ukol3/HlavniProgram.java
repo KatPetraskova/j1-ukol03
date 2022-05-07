@@ -34,8 +34,16 @@ public class HlavniProgram {
         System.out.println(katcinPocitac.toString());
 
         katcinPocitac.zapniSe();
+//        katcinPocitac.zapniSe();
+//        katcinPocitac.vypniSe();
 
-        katcinPocitac.vypniSe();
+        katcinDisk.setVyuziteMisto(85_000_000_000L);
+        katcinPocitac.vytvorSouborOVelikosti(20_000_000L);
+
+        System.out.println("Využité místo na disku je " + katcinDisk.getVyuziteMisto() + ".");
+
+        katcinPocitac.vymazSouboryOVelikosti(50_000_000_000L);
+        System.out.println("Využité místo na disku je " + katcinDisk.getVyuziteMisto() + ".");
 
     }
 
